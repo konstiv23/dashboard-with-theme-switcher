@@ -52,6 +52,17 @@ main h2 {
   border-radius: 8px;
 }
 
+.card-big > *:first-child {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-big > *:first-child  > *:first-child {
+  margin-right: 8px;
+}
+
 footer {
   margin-top: 20px;
   font-size: 11px; text-align: center;
