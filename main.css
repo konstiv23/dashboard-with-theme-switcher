@@ -88,6 +88,39 @@ main h2 {
   font-size: 12px;
 }
 
+.card-small {
+  padding-top: 28px;
+  padding-left:  24px;
+  padding-right: 34px;
+  padding-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-small > *:nth-child(2), .card-small > *:nth-child(4) {
+  justify-self: end;
+}
+
+.card-small > *:nth-child(3), .card-small > *:nth-child(4) {
+  align-self: end;
+}
+
+.card-small > *:nth-child(3) {
+  font-size: 32px;
+}
+
+.card-small > *:nth-child(4) {
+  font-size: 12px;
+}
+
+.growth-up {
+  color: hsl(163, 72%, 41%);
+}
+
+.growth-down {
+  color: hsl(356, 69%, 56%);
+}
+
 footer {
   margin-top: 20px;
   font-size: 11px; text-align: center;
