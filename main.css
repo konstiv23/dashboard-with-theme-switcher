@@ -5,11 +5,23 @@
 body {
   margin: 0 auto;
   width: 1110px;
+  font-family: "Inter", sans-serif;
 }
 
-.card-big, .card-small {
-  background-color: var(--card-background);
-  border-radius: 8px;
+header {
+  margin-top: 40px;
+  display: flex;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+header h3 {
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .cards-top, .cards-bottom {
@@ -20,11 +32,24 @@ body {
 .cards-top {
   grid-template-rows: 220px;
   grid-gap: 30px;
+  margin-top: 45px;
+}
+
+main h2 {
+  margin-top: 47px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .cards-bottom {
   grid-template-rows: repeat(2, 125px);
   grid-gap: 25px;
+  margin-top: 25px;
+}
+
+.card-big, .card-small {
+  background-color: var(--card-background);
+  border-radius: 8px;
 }
 
 footer {
