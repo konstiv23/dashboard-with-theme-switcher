@@ -1,4 +1,36 @@
-<style>
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-</style>
+:root {
+  --card-background: hsl(227, 47%, 96%);
+}
+
+body {
+  margin: 0 auto;
+  width: 1110px;
+}
+
+.card-big, .card-small {
+  background-color: var(--card-background);
+  border-radius: 8px;
+}
+
+.cards-top, .cards-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-top {
+  grid-template-rows: 220px;
+  grid-gap: 30px;
+}
+
+.cards-bottom {
+  grid-template-rows: repeat(2, 125px);
+  grid-gap: 25px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 11px; text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
