@@ -1,5 +1,6 @@
 :root {
   --body-backgrond: white;
+  --top-background: hsl(225, 100%, 98%);
   --card-background: hsl(227, 47%, 96%);
   --text-color-contrast: hsl(230, 17%, 14%);
   --text-color: #595C6D;
@@ -7,6 +8,7 @@
 
 .dark-mode {
   --body-background: hsl(230, 17%, 14%);
+  --top-background: hsl(232, 19%, 15%);
   --card-background: hsl(228, 28%, 20%);
   --text-color-contrast: hsl(0, 0%, 100%);
   --text-color: hsl(228, 34%, 66%);
@@ -20,6 +22,17 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: var(--text-color);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: var(--top-background);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 240px;
 }
 
 header {
