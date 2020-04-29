@@ -1,13 +1,25 @@
 :root {
+  --body-backgrond: white;
   --card-background: hsl(227, 47%, 96%);
+  --text-color-contrast: hsl(230, 17%, 14%);
+  --text-color: #595C6D;
+}
+
+.dark-mode {
+  --body-background: hsl(230, 17%, 14%);
+  --card-background: hsl(228, 28%, 20%);
+  --text-color-contrast: hsl(0, 0%, 100%);
+  --text-color: hsl(228, 34%, 66%);
 }
 
 body {
   margin: 0 auto;
   width: 1110px;
+  background-color: var(--body-background);
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: var(--text-color);
 }
 
 header {
@@ -19,6 +31,7 @@ header {
 
 header h1 {
   font-size: 28px;
+  color: var(--text-color-contrast);
 }
 
 header h3 {
@@ -26,12 +39,12 @@ header h3 {
   font-size: 14px;
 }
 
-.dark-mode {
+.dark-mode-group {
   display: flex;
   align-items: center;
 }
 
-.dark-mode > div:first-child {
+.dark-mode-group > div:first-child {
   margin-top: 14px;
   margin-right: 15px;
 }
@@ -127,12 +140,6 @@ main h2 {
   border-radius: 8px;
 }
 
-.card-big > *:first-child {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-}
-
 .card-big {
   display: flex;
   flex-direction: column;
@@ -140,6 +147,9 @@ main h2 {
 }
 
 .card-big > *:first-child {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
   margin-top: 35px;
 }
 
@@ -150,6 +160,7 @@ main h2 {
 .card-big > *:nth-child(2) {
   margin-top: 22px;
   font-size: 55px;
+  color: var(--text-color-contrast);
 }
 
 .card-big > *:nth-child(3) {
@@ -183,6 +194,7 @@ main h2 {
 
 .card-small > *:nth-child(3) {
   font-size: 32px;
+  color: var(--text-color-contrast)
 }
 
 .card-small > *:nth-child(4) {
