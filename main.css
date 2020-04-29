@@ -1,5 +1,5 @@
 :root {
-  --body-backgrond: white;
+  --body-background: white;
   --top-background: hsl(225, 100%, 98%);
   --card-background: hsl(227, 47%, 96%);
   --text-color-contrast: hsl(230, 17%, 14%);
@@ -98,7 +98,7 @@ header h3 {
   width: 18px;
   left: 25px;
   bottom: 2.5px;
-  background-color: white;
+  background-color: var(--body-background);
   -webkit-transition: .4s;
   transition: .4s;
 }
